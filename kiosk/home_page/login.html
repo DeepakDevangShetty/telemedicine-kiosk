@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AI Medical Clinic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"] {
+            background-color: #09e2ff;
+            color: white;   
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .forgot-password {
+        margin-top: 15px;
+    }
+
+    .forgot-password a {
+        color: #09e2ff;
+        text-decoration: none;
+    }
+
+    .forgot-password a:hover {
+        text-decoration: underline;
+    }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+    <script>
+        const form = document.querySelector('form');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const emailError = document.getElementById('email-error');
+        const passwordError = document.getElementById('password-error');
+    
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+    
+            const emailValue = emailInput.value;
+            const passwordValue = passwordInput.value;
+    
+            // Email validation
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+            if (!emailPattern.test(emailValue)) {
+                emailError.textContent = 'Please enter a valid email address ending with @gmail.com';
+                return;
+            } else {
+                emailError.textContent = '';
+            }
+    
+            // Password validation
+            if (passwordValue.length < 8) {
+                passwordError.textContent = 'Password must be at least 8 characters long';
+                return;
+            } else {
+                passwordError.textContent = '';
+            }
+    
+            // Form submission logic goes here
+            console.log('Form submitted successfully');
+        });
+    </script>
+</body>
+</html>

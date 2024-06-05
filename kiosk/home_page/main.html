@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VAIDYA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="header-row">
+        <div class="logo">
+          <img src='C:\\Users\\deepa\\BOT_MAIN\\logo.png' width="50" height="50" alt="Logo" />
+        </div>
+        <header>
+          <nav>
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+              <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+              <li><a href="#aichatbot"><i class="fas fa-robot"></i> AI Chatbot</a></li>
+              <li><a href="#videocall"><i class="fas fa-video"></i> Video Call</a></li>
+              <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+              <li><a href="login.html"><i class="fas fa-user"></i> Log In</a></li>
+              <li class="language-switcher">
+                <select id="language-select">
+                  <option value="en">English</option>
+                  <option value="kn">ಕನ್ನಡ</option>
+                  <option value="hi">हिंदी</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <main>
+      <div class="row">
+        <section id="home" class="home-section">
+          <div class="home-content">
+            <h1 id="home-title" class="fade-in-up">VAIDYA</h1>
+            <p class="tagline">Experience the future of healthcare</p>
+            <a href="#aichatbot" class="btn">Get Started</a>
+          </div>
+        </section>
+      </div>
+      <div class="row">
+        <section id="aichatbot" class="section-container">
+          <h2 class="section-title">VAIDYA BOT</h2>
+          <div class="container">
+            <div class="about">
+              <button class="btn" onclick="window.open('C:\\Users\\deepa\\BOT_MAIN\\bot\\bot_main.html', '_blank')">
+                <i class="fas fa-robot"></i> Launch AI Chatbot
+              </button>
+              <div class="bot-image">
+                <img src='C:\\Users\\deepa\\BOT_MAIN\\bot_bg.jpg' alt="Bot Background" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="row">
+        <section id="videocall" class="section-container">
+          <h2 class="section-title">VAIDYA INTERACT</h2>
+          <div class="container">
+            <h1 class="header">Coming soon...</h1>
+            <div class="about">
+              <div class="video-placeholder">
+                <i class="fas fa-video fa-5x"></i>
+                <p>Stay tuned for our interactive video call feature</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="row">
+        <section id="about" class="section-container">
+          <h2 class="section-title">ABOUT US</h2>
+          <div class="container">
+            <div class="about">
+              <div class="about-text">
+                <h2>Our Approach</h2>
+                <p>At AI Medical Clinic, we believe in the power of AI to revolutionize healthcare. Our AI-assisted kiosk provides quick and accurate diagnoses, no matter the time of day. With no insurance requirements, short waiting times, and no appointment needed, we make it easy for you to get the care you need.</p>
+                <p>Our team of experienced medical professionals and AI experts work together to ensure the highest level of care. We use state-of-the-art technology to provide a wide range of diagnostic services, from common ailments to more complex conditions.</p>
+                <p>At AI Medical Clinic, we're committed to providing the best possible care to our patients. We believe that everyone deserves access to high-quality healthcare, and we're dedicated to making that a reality.</p>
+              </div>
+              <div class="about-image">
+                <img src='C:\\Users\\deepa\\BOT_MAIN\\about us bg.jpg' alt="About Image" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div class="row">
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <p>&copy; 2024 VAIDYA. All rights reserved.</p>
+            <ul class="social-icons">
+              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
